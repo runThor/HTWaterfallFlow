@@ -19,7 +19,7 @@
 }
 
 - (void)initViews {
-    UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.contentView.frame.size.width, self.contentView.frame.size.height)];
+    UIImageView *imgView = [[UIImageView alloc] init];
     [self.contentView addSubview:imgView];
     self.imgView = imgView;
 }
