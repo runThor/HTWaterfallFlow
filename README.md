@@ -13,10 +13,9 @@
 
 HTWaterfallFlowLayout *waterfall = [[HTWaterfallFlowLayout alloc] initWithColumnCount:2];
 [waterfall setColumnSpacing:10 rowSpacing:10 sectionInset:UIEdgeInsetsMake(10, 10, 10, 10)];
-__weak typeof(self) weakSelf = self;
 [waterfall setItemHeightBlock:^CGFloat(CGFloat itemWidth, NSIndexPath *indexPath) {
-// 返回计算后的高度
-return itemHeight;
+    // 返回计算后的高度
+    return itemHeight;
 }];
 
 // 作为collectionView的layout
